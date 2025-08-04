@@ -147,6 +147,37 @@ color: black;
 
 /* main section ends here */
 
+/* footer section starts here */
+.footer{
+    margin-top: 90px;
+    background-color: #161616;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer-title{
+    padding-top: 200px;
+    padding-bottom: 80px;
+    font-weight: 600;
+    font-size: 2rem;
+     
+}
+.footer-down ul{
+    padding: 40px 50px 100px 50px;
+    /* padding-bottom: 100px; */
+     display: flex;
+     justify-content: space-evenly;
+list-style: none;
+gap: -60px;
+    
+}
+.footer-down li{
+    align-items: center;
+text-align: center;
+padding: 0 10px;
+margin: 0 ;
+}
 /* media quries for laptop start here */
 @media (max-width: 992px) {
     .container{
@@ -197,5 +228,9 @@ color: black;
     }
       .upcoming-matches-right{
         grid-template-columns: repeat(1, 1fr);
+}
+.footer-down ul{ 
+    flex-direction: column;
+    gap: 10px;
 }
 }
