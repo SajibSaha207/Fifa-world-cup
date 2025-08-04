@@ -20,6 +20,36 @@
     border: none;
     color: white;
 }
+
+/* animation */
+@keyframes banner-animation{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes banner-player-animation{
+    0%{
+        opacity: 0.5;
+        transform: translateX(-20px);
+    }
+    50%{
+        opacity: 0.7;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /* Custom */
 /* banner */
 .banner{
@@ -29,6 +59,8 @@
     color: white;
     border-radius: 15px;
     margin: 50px auto;
+
+    animation: banner-animation 0.7s ease-out forwards;
     
 }
 .banner-left{
@@ -52,6 +84,7 @@ max-width:  65%;
 }
 .banner-right img{
     display: block;
+    animation: banner-player-animation 1s ease-in infinite;
    
 }
 /* banner ends here */
