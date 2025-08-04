@@ -116,6 +116,9 @@ color: black;
 
 /* media quries for laptop start here */
 @media (max-width: 992px) {
+    .container{
+        margin: 0 20px;
+    }
     .upcoming-matches{
         flex-direction: column;
     }
@@ -143,6 +146,9 @@ color: black;
 
 /* media quries for mobile start here */
 @media (max-width: 768px) {
+    .container{
+        margin: 0 10px;
+    }
     .banner {
         flex-direction: column;
        
@@ -156,4 +162,7 @@ color: black;
     .banner .banner-left p{
         max-width: 100%;
     }
+      .upcoming-matches-right{
+        grid-template-columns: repeat(1, 1fr);
+}
 }
